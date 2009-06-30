@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'sinatra'
 
+configure :production do
+end
+
 def to_xml(ac)
   if ac.nil?
     xml = "<result>Does not exist.</result>"
